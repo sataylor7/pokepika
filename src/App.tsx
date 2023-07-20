@@ -4,6 +4,7 @@ import { useState } from 'react'
 import Header from '@/components/Header'
 import Pokemon from '@/components/views/Pokemon'
 
+// simple app to show the generation 1-4 starters for pokemon
 function App() {
   const [selectedStarters, setSelectedStarters] = useState<string>('gen1')
   const { data, isLoading, error } = useQuery({
@@ -12,6 +13,7 @@ function App() {
     enabled: Boolean(selectedStarters),
   })
 
+  // handle the switching of data/ fetching/caching of data
   const handleOnClick = (generation: string) => {
     setSelectedStarters(generation)
   }
