@@ -37,11 +37,6 @@ type Props = {
   data: PokemonDetailData
 }
 
-const formatter = new Intl.ListFormat('en', {
-  style: 'long',
-  type: 'conjunction',
-})
-
 function Pokemon({ data }: Props) {
   return (
     <div className="block rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)]">
@@ -65,11 +60,13 @@ function Pokemon({ data }: Props) {
         </h5>
         <p className="mb-4 text-base text-neutral-600 ">
           types:{' '}
-          {formatter.format(
-            data.types.map(
-              (item: { type: { name: string } }) => item.type.name,
-            ),
-          )}
+          {data.types.map((item: { type: { name: string } }) => {
+            return (
+              <div className={`rounded-sm ${item.type.name} text-center py-1`}>
+                {item.type.name}
+              </div>
+            )
+          })}
         </p>
         <button
           type="button"
@@ -77,7 +74,7 @@ function Pokemon({ data }: Props) {
           data-te-ripple-init
           data-te-ripple-color="light"
         >
-          Button
+          More Information
         </button>
       </div>
     </div>
