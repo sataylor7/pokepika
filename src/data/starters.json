@@ -1,0 +1,49 @@
+{
+  "gen1": [
+    {
+      "name": "bulbasaur"
+    },
+    {
+      "name": "charmander"
+    },
+    {
+      "name": "squirtle"
+    },
+    {
+      "name": "pikachu"
+    }
+  ],
+  "gen2": [
+    {
+      "name": "chikorita"
+    },
+    {
+      "name": "cyndaquil"
+    },
+    {
+      "name": "totodile"
+    }
+  ],
+  "gen3": [
+    {
+      "name": "treecko"
+    },
+    {
+      "name": "torchic"
+    },
+    {
+      "name": "mudkip"
+    }
+  ],
+  "gen4": [
+    {
+      "name": "turtwig"
+    },
+    {
+      "name": "chimchar"
+    },
+    {
+      "name": "piplup"
+    }
+  ]
+}
