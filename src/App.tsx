@@ -1,17 +1,12 @@
-import PokeService from '@/services/PokeService'
-import { useQuery } from '@tanstack/react-query'
 import { useState } from 'react'
 import Header from '@/components/Header'
 import Pokemon from '@/components/views/Pokemon'
+import { useFetchStartersQuery } from '@/hooks/useFetchStarters'
 
 // simple app to show the generation 1-4 starters for pokemon
 function App() {
   const [selectedStarters, setSelectedStarters] = useState<string>('gen1')
-  const { data, isLoading, error } = useQuery({
-    queryKey: ['starters', selectedStarters],
-    queryFn: () => PokeService.fetchStarters(selectedStarters),
-    enabled: Boolean(selectedStarters),
-  })
+  const { data, isLoading, error } = useFetchStartersQuery(selectedStarters)
 
   // handle the switching of data/ fetching/caching of data
   const handleOnClick = (generation: string) => {
