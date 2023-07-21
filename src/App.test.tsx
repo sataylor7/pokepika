@@ -49,7 +49,8 @@ describe('App component', () => {
     })
 
     // the status is loading
-    await waitFor(() => console.log(result.current.status))
+    await waitFor(() => expect(result.current.status).toEqual('loading'))
+    //console.log(result.current.data)
     //expect(result.current.data?.name).toBe('mocked-react-query')
   })
 
