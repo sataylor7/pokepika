@@ -2,6 +2,7 @@
 import Client, { request } from './apiClient'
 import generations from '@/data/starters.json'
 
+// should move this to an ENV VAR
 const pokeClient = Client('https://pokeapi.co/api/v2/')
 
 export default class PokeService {

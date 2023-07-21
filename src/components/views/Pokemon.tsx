@@ -63,7 +63,7 @@ function Pokemon({ data }: Props) {
           {data.types.map((item: { type: { name: string } }) => {
             return (
               <span
-                className={`rounded-sm ${item.type.name} text-center py-1`}
+                className={`rounded-sm ${item.type.name} text-center py-1 px-2`}
                 key={item.type.name}
               >
                 {item.type.name}
