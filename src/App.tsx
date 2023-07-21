@@ -16,6 +16,8 @@ function App() {
   if (isLoading) return <div>loading...</div>
   if (error) return <div>there was an error</div>
 
+  console.log(data)
+
   return (
     <>
       <Header handleOnClick={handleOnClick} />
