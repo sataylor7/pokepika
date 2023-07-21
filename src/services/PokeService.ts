@@ -2,7 +2,7 @@
 import Client, { request } from './apiClient'
 import generations from '@/data/starters.json'
 
-const pokeClient = Client('http://pokeapi.co/api/v2/')
+const pokeClient = Client('https://pokeapi.co/api/v2/')
 
 export default class PokeService {
   static async fetchStarters(generation: string) {
