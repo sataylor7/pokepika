@@ -47,6 +47,7 @@ describe('App component', () => {
     const { result } = renderHook(() => useFetchStartersQuery('gen1'), {
       wrapper: createWrapper(),
     })
+    // @TODO: debug this more, I think its not resolving due to the promise
 
     // the status is loading
     await waitFor(() => expect(result.current.status).toEqual('loading'))

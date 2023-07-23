@@ -12,8 +12,10 @@ function App() {
   const handleOnClick = (generation: string) => {
     setSelectedStarters(generation)
   }
-
+  // @TODO: update this to a loading skeleton for the cards
   if (isLoading) return <div>loading...</div>
+  // @TODO: move this to its own component, create a context for messages
+  // state/dispatch error messages, log the error from server, display friendly message
   if (error) return <div>there was an error</div>
 
   console.log(data)
