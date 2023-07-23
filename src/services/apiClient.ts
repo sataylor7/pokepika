@@ -1,7 +1,7 @@
 import axios from 'axios'
 // this is a bit of update not as detailed as my original
 // https://github.com/sataylor7/fluffy-resources <== the original one I wrote 5+ yrs ago in JS
-const Client = (base: string) => {
+const client = (base: string) => {
   return axios.create({
     baseURL: base,
   })
@@ -21,4 +21,4 @@ export const request = (Client: (arg0: any) => Promise<any>, options: any) => {
     })
 }
 
-export default Client
+export default client
