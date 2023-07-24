@@ -1,6 +1,6 @@
 # Notes
 
-The basic scaffolding for this project was taken from my[personal vite setup template](https://github.com/sataylor7/my-vite-starter-template)
+The basic scaffolding for this project was taken from my [personal vite setup template](https://github.com/sataylor7/my-vite-starter-template)
 React + TS + Axios + React-query + Vite + ESlint + Prettier + Vitest + Tailwind
 
 # Overview
