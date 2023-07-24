@@ -28,11 +28,11 @@ The idea for this project was to fetch the starter pokemon for gen 1-4. Display 
 
 I would like to actually set this up to switch between pokemon and digimon. I still have to figure out what the UX would look like to make that coherent
 
-[ ] fix/debug the tests
-[ ] add toast context (no 3rd party)
-[ ] fix mobile navigation
-[ ] add the evolution chain
-[ ] add react-router
-[ ] add a "full" detail/breakdown view
-[ ] add search functionality
-[ ] implement a "search" history (this would probably rely on the caching of react-query, so would need to think through that a bit)
+- [ ] fix/debug the tests
+- [ ] add toast context (no 3rd party)
+- [ ] fix mobile navigation
+- [ ] add the evolution chain
+- [ ] add react-router
+- [ ] add a "full" detail/breakdown view
+- [ ] add search functionality
+- [ ] implement a "search" history (this would probably rely on the caching of react-query, so would need to think through that a bit)
